@@ -51,7 +51,7 @@ class HomeCar extends StatelessWidget {
                         child: Column(
                           children: [
                             Image.asset('assets/304kmh.png'),
-                            const Text('30\nKm\h'),
+                            const Text('  30\nKm\h'),
                           ],
                         ),
                       ),
@@ -65,7 +65,7 @@ class HomeCar extends StatelessWidget {
                         child: Column(
                           children: [
                             Image.asset('assets/379power.png'),
-                            const Text('379\nPower'),
+                            const Text('  379\nPower'),
                           ],
                         ),
                       ),
@@ -79,13 +79,49 @@ class HomeCar extends StatelessWidget {
                         child: Column(
                           children: [
                             Image.asset('assets/4seats.png'),
-                            const Text('4\nSeats'),
+                            const Text('   4\nSeats'),
                           ],
                         ),
                       ),
                     ),
                   ],
                 ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      const Text(
+                        "150",
+                        style: TextStyle(
+                            fontSize: 30,
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold),
+                      ),
+                      Container(
+                        height: 50,
+                        width: 150,
+                        decoration: const BoxDecoration(
+                          borderRadius: BorderRadius.only(
+                            topLeft: Radius.circular(20),
+                            bottomRight: Radius.circular(20),
+                          ),
+                          color: Colors.red,
+                        ),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: const [
+                            Text('Rent Now'),
+                            Icon(Icons.arrow_forward),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Row(
+                  children: const [],
+                )
               ],
             ),
           ),
