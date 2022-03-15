@@ -58,7 +58,14 @@ class HomeScreen extends StatelessWidget {
                       ),
                     ),
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const HomeCar(),
+                      ),
+                    );
+                  },
                   child: const Text(
                     "let's Go!",
                     style: TextStyle(color: Colors.black, fontSize: 20),
