@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:rentcar/home_car.dart';
+import 'package:rentcar/search_field.dart';
 
 import 'home_screen.dart';
 
@@ -14,11 +15,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Rent a Car',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const HomeScreen(),
+      home: const SearchField(),
     );
   }
 }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rentcar/search_field.dart';
 
 import 'home_car.dart';
 
@@ -30,7 +31,7 @@ class HomeScreen extends StatelessWidget {
             child: Column(
               children: [
                 const Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 80),
+                  padding: EdgeInsets.symmetric(vertical: 80),
                   child: Image(
                     image: AssetImage('assets/car1.png'),
                   ),
@@ -62,7 +63,7 @@ class HomeScreen extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const HomeCar(),
+                        builder: (context) => const SearchField(),
                       ),
                     );
                   },
